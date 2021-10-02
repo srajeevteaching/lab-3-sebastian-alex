@@ -26,10 +26,11 @@ elif weight > 10 and weight <= 20:
 elif weight > 20:
     print("\nWeight Exceeds shipping limit! (Please enter between 0kg - 20kg)")
     is_valid = False
+elif weight <= 0:
+    print("\nWeight does not meet shipping requirements! (Please enter between 1kg - 20kg)")
+    is_valid = False
 
-
-
-# Determine if distance is valid and total shipping calcuation
+# Determine if distance is valid and total shipping calculation
 if is_valid == True:
     if distance >= 10 and distance <= 3000:
         # Total Shipping Calculation
